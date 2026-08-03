@@ -1,0 +1,15 @@
+PS> ./scripts/groupmanager.ps1 -UserPrincipalName alex.wilber@contoso.com -DryRun
+[OK] Connected to Microsoft Graph.
+
+  +--------------------------------------------------------------------------------------------------------------------+
+  | Confirm Group Addition                                                                                            |
+  +--------------------------------------------------------------------------------------------------------------------+
+  | DisplayName          Management       GroupTypes                                                                  |
+  | -------------------  ---------------  ----------------                                                            |
+  | Demo Support Team    Microsoft Graph  Security group                                                              |
+  +--------------------------------------------------------------------------------------------------------------------+
+
+[DRY RUN] Would execute: Add Graph-managed group membership
+  PS> Invoke-MgGraphRequest -Method POST -Uri 'https://graph.microsoft.com/v1.0/groups/demo-group-id/members/$ref' -Body <redacted>
+
+All names, domains, and identifiers in this transcript are fictional.

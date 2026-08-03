@@ -1,0 +1,28 @@
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*.local.ps1
+*.secrets.psd1
+secrets/
+
+# Tenant data and generated output
+artifacts/
+exports/
+output/
+transcripts/
+*.clixml
+*.log
+*.transcript.txt
+
+# Test and analysis output
+TestResults/
+coverage.xml
+PSScriptAnalyzerResults.xml
+
+# Editors and operating systems
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+Desktop.ini
